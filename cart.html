@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - About The Fit</title>
+    <link rel="stylesheet" href="style.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img src="images/about the fit logo.jpg" alt="Image" height="75" width="125"></a>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px height 30px">
+                <img src="images/menu icon.jpg" class="menu-icon"
+                onclick="menutoggle()">
+             </div>  
+          </div>
+        </div>
+
+        <!----- cart details ------>
+        <div class="small-container cart-page">
+
+            <table>
+
+                <tr>
+                    <th>Product</th>
+                    <th>Quality</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/oversized cropped tracksuit.webp">
+                            <div>
+                                <p>oversized cropped tracksuit</p>
+                                <small>Price: ksh1500</small>
+                                <br>
+                                <a href=""> Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>ksh2000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/leather crop.jpg">
+                            <div>
+                                <p>leather crop</p>
+                                <small>Price: ksh1500</small>
+                                <br>
+                                <a href=""> Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>ksh2000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/oversized shirt dress.webp">
+                            <div>
+                                <p>oversized shirt dress</p>
+                                <small>Price: ksh1200</small>
+                                <br>
+                                <a href=""> Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>ksh2000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="images/sleeveless dress.jpg">
+                            <div>
+                                <p>sleeveless dress </p>
+                                <small>Price: ksh999</small>
+                                <br>
+                                <a href=""> Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>ksh2000</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>ksh2000</td>
+                    </tr>
+                    <tr>
+                        <td>tax</td>
+                        <td>ksh 50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>ksh2050</td>
+                    </tr>
+                </table>
+                
+                <a href="#">Proceed to Checkout</a>
+            </div>
+
+        </div>
+            
+   <!----- footer ----->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-1">
+                   <h3>Let's be Besties</h3>
+            
+               </div>
+               <div class="footer-col-2">
+                   <h3>useful links</h3>
+                   <ul>
+                       <li>Blog</li>
+                       <li>Return policy</li>
+                       <li>Terms and conditions</li>
+                       <li>Become an affliate</li>
+                   </ul>
+               </div>
+               <div class="footer-col-3">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>Instagram</li>
+                    <li>Pinterest</li>
+                    <li>twitter</li>
+                </ul>
+            </div>
+           </div>
+           <hr>
+           <p class="copyright">@2021 The Fit</p>
+       </div>
+   </div>
+   <!-----js for toggle menu----->
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+           if(MenuItems.style.maxHeight == "0px")
+           {
+               MenuItems.style.maxHeight = "200px";
+           }
+           else
+           {
+               MenuItems.style.maxHeight = "0px";
+           }
+       }
+   </script>
+
+
+
+</body>
+</html>
